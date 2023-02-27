@@ -22,9 +22,8 @@ INCLUDE = -I ${SRC_INCLUDE}
 # clean up all files that should NOT be submitted
 .PHONY: clean
 clean:
-	rm -rf *~ $(SRC)/*.o
+	rm -rf *~ $(SRC)/*.o BlackJack
 	$(SRC_DIR)
-	$(BLACKJACK).exe
 
 # compilation using the files in include, src, and test, but not src/project
 	$(CXX) $(CXXFLAGS) -o $(INCLUDE) \ $(SRC_DIR)/*.cpp
